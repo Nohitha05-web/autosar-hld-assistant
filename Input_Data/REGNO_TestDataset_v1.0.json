@@ -1,0 +1,74 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the periodicity and ASIL level of SWC_ExteriorLighting?",
+    "target_entities": ["SWC_ExteriorLighting", "10 ms", "ASIL-B"],
+    "expected_page": 1,
+    "category": "swc_inventory"
+  },
+  {
+    "id": "q2",
+    "question": "Which interface connects SWC_ExteriorLighting to CDD_SmartSmartActuator?",
+    "target_entities": ["If_LightingCommand", "P_LightCmd", "R_LightCmd"],
+    "expected_page": 2,
+    "category": "interface_mapping"
+  },
+  {
+    "id": "q3",
+    "question": "What is the trigger event and max WCET of Runnable_Lighting_Step?",
+    "target_entities": ["TimingEvent_10ms", "1.25 ms", "Task_Periodic_10ms"],
+    "expected_page": 3,
+    "category": "runnables"
+  },
+  {
+    "id": "q4",
+    "question": "What diagnostic stack modules and DTC reporting interfaces are used?",
+    "target_entities": ["DEM", "DCM", "If_DiagnosticEvent"],
+    "expected_page": 3,
+    "category": "bsw_integration"
+  },
+  {
+    "id": "q5",
+    "question": "What is the valid range and CAN frame mapping for Sig_VehicleLockStatus?",
+    "target_entities": ["UNLOCKED", "LOCKED", "BCM_CAN_Frame_0x240"],
+    "expected_page": 2,
+    "category": "signals"
+  },
+  {
+    "id": "q6",
+    "question": "What safety goals are defined under ISO 26262 for BCM?",
+    "target_entities": ["SG-BCM-01", "SG-BCM-02", "ASIL-B"],
+    "expected_page": 3,
+    "category": "safety"
+  },
+  {
+    "id": "q7",
+    "question": "What architectural issue was recorded regarding port R_AmbientLightSensor?",
+    "target_entities": ["Issue-BCM-101", "dangling", "unconnected"],
+    "expected_page": 4,
+    "category": "inconsistency"
+  },
+  {
+    "id": "q8",
+    "question": "What is the target ECU microcontroller and AUTOSAR release version?",
+    "target_entities": ["ECU_BCM_RH850", "4.4.0"],
+    "expected_page": 1,
+    "category": "metadata"
+  },
+  {
+    "id": "q9",
+    "question": "What is the tire pressure monitoring threshold and antenna impedance?",
+    "target_entities": [],
+    "expected_page": null,
+    "is_unsupported": true,
+    "category": "unsupported_query"
+  },
+  {
+    "id": "q10",
+    "question": "What is the battery chemistry and cell chemistry of the Tesla 4680 cell?",
+    "target_entities": [],
+    "expected_page": null,
+    "is_unsupported": true,
+    "category": "unsupported_query"
+  }
+]
