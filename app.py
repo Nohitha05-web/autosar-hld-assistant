@@ -105,6 +105,7 @@ vector_store = get_vector_store()
 st.sidebar.title("🚗 Navigation & Ingestion")
 
 DATA_DIR = "data"
+os.makedirs(DATA_DIR, exist_ok=True)
 available_files = []
 if os.path.exists(DATA_DIR):
     available_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".pdf")]
